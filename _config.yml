@@ -1,4 +1,7 @@
-theme: jekyll-theme-slate
+remote_theme: pages-themes/cayman@v0.2.0
+
+
+
 title: Zuzana Martins =
 tagline: Portfolio
 
@@ -32,3 +35,4 @@ footer-hover-col: "#0085A1"
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
