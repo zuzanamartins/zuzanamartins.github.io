@@ -57,38 +57,13 @@ sitemap:
 									<p>I am a software engineer based out of Southern California 
 									who is passionate about designing and building mobile applications.
 									I hold a Bachelor's degree in Computer Science and have created 
-										and contributed to a vast number of projects in the past two years. </p>
-									<ul class="actions">
-  										<li><a href="{{ about.md | absolute_url }}" class="button">Full Story</a></li>
-  									</ul>
+										and contributed to a vast number of projects in the past two years. 
+									
+									This is my introduction that will describe this portfolio and final process.</p>
+								
 							</article>
 
-						<!-- Posts -->
-							<section class="posts">
-                {% for post in site.posts limit:3 %}
-                {% assign mod3 = forloop.index | modulo: 3 %}
-  								<article>
-  									<header>
-  									
-  										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
-  									</header>
-  									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
-  									<p>{{ post.excerpt }}</p>
-  									<ul class="actions">
-  										<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
-  									</ul>
-  								</article>
-                  {% if mod3 == 0 %}
-                  <article>
-  									<header>
-  										<h2><a href="#">Sponsored</a></h2>
-  									</header>
-
-  								</article>
-                  {% endif %}
-                {% endfor %}
-
-							</section>
+						
 
 					</div>
 
