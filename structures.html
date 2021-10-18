@@ -19,28 +19,35 @@ sitemap:
 	<dl>
 		<dt>Identification</dt>
 		<dd>
-		<p>ypsum</p>	
+		<p>The artifact Jupyter Project that was chosen for the second category, Algorithms and Data Structures comes from the class CS-340 Client/Server Development. It was created in February 2021. This class offered an introduction to full stack development; thus this enhancement plan will focus on the interface part of said artifact. The project itself is made of two parts: a MongoDB database and a Jupyter Notebook dashboard. 
+			The dashboard provides the ability to view select database entries based on the sorting options used, along with graphical widgets that accompany the selected database options. I chose this project because it is a well-rounded choice to showcase my abilities with algorithms and data structures. For this part, the focus is on the Python parts of the stack – the front-end.</p>	
 		</dd>
 
 		<dt>Overview</dt>
 		<dd>
-			<p>ypsum</p>
+			<p>The Jupyter Project is comprised of three files. Python CRUD (Create, Read, Update, Delete) class that acts as the bridge between the dashboard and the database that allows for basic operations and enables us to load the database through a user interface. In the original file, only the Create and Read methods are included. In addition to the incomplete CRUD, this class also contains authentication so that the database would be protected from unauthorized access. For this project, the username and password are hardcoded. <br />
+				Second is the Jupyter Notebook file, in which the actual dashboard is located, and from where further functionality is linked. The original functionality of the dashboard was very limited. It displayed the header title and image, and a basic version of the data table filled with entries from the database. Columns were selectable with filtering option, so some data table manipulation was possible. The dashboard also contained partial code for further data table functionality and some additional widgets; however those were not functioning. <br />
+				The third file is a comma-separated value text file that contains the initial data that is used to create the MongoDB database. 
+				</p>
 		</dd>
 
 		<dt>Justification</dt>
 		<dd>		
-			<p>ypsum</p>
+			<p>The planned enhancements were necessary because the project itself was unfinished and only partially functionable. Completing the CRUD module was the priority, as without that, it was only able to create and read entries. However, update and delete methods are just as important when it comes to databases. In the notebook file that contains the dashboard code, it was also imperative that widget imports be fixed as without correcting those, the file would not run. Subsequent modifications were regarding the widgets itself. 
+				The pre-determined radio buttons were not displaying results, which would then also further affect the other two widgets. I then fixed the flawed and impartial code for the graph and map widgets so that they would display on the page and show the applicable entry details. </p>
 
 		</dd>
 
 		<dt>Explanation</dt>
 		<dd>	
-			<p>ypsum</p>
+			<p>Completing the CRUD module gave us full functionality with the ability to not just create and read, but also update and delete. That greatly increases the functionality possibilities for the user interface as well. After the planned enhancements and modifications to the notebook file were finished, the dashboard displays a detailed data table that has adjustable columns and four options radio buttons that filter out results based on pre-determined multi-factor criteria. Those results then go two steps further, by also adjusting what is displayed on a chart and a map widget. 
+				The chart displays the percentage of animals returned after the data table has been modified. The map shows exact location of the whatever row (animal) is selected in the data table. The location is precise; each animal entry contains latitude and longitude coordinates along with data such as age, breed, animal outcome and more.</p>
 		</dd>
 
 		<dt>Final Discussion</dt>
 		<dd>
-			<p>ypsum</p>
+			<p>The greatest and most time-consuming roadblock was the environment. All my previous work was created through a virtual environment, so it took a considerate amount of time to re-establish access to Mongo and Jupyter Notebook. After everything was set up, I was able to successfully test both the CRUD module and the Notebook file. Both were able to connect to the database and perform test functions. This was a challenging project because of its multiple full-stack layers; however, it did provide me with the opportunity to work on a single project from the back end to the front end. 
+				I gained a better understanding of how both sides of such an application work together to create a cohesive final product. </p>
 		</dd>
 	</dl>
 
