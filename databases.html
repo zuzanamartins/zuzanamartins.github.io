@@ -30,24 +30,30 @@ sitemap:
 
 		<dt>Overview of original functionality</dt>
 		<dd>
-			<p>The artifact itself is made of three files, a python CRUD (create, read, update, delete) class, Jupyter Notebook file and a comma-separated values text file The third category focuses on databases; thus the focus in this enhancement plan is on the MongoDB database, and in no small part also the Jupyter notebook file. <br />
-				The MongoDB database processes the comma-separated value into its own database and collection. To provide some basic search functions for functionality testing, I created a couple of simple index queries. The MongoDB database also holds the authentication data. It contains a separate collection that holds two different user authentications. A read only account, and a full access admin account. Both are password protected. The Jupyter notebook contains a few blocks of Mongo queries meant to return specific results to the data table. However, in the original project file, they do not function.</p>
-		</dd>
+			<p>
+				The artifact itself is made of three files, a python CRUD (create, read, update, delete) class, Jupyter Notebook file and a comma-separated values text file The third category focuses on databases; thus the focus in this enhancement plan is on the MongoDB database, 
+				and in no small part also the Jupyter notebook file. The MongoDB database processes the comma-separated value into its own database and collection. To provide some basic search functions for functionality testing, I created a couple of simple index queries. The MongoDB database also holds the authentication data. It contains a separate collection that holds a user authentication; a full access admin account that is password protected. The Jupyter notebook contains a few blocks of Mongo queries meant to return specific results to the data table. However, in the original project file, they do not function.
+			</p>	
+
+			</dd>
 
 		<dt>Justification of performed enhancements</dt>
 		<dd>		
-			<p>ypsum</p>
+			<p>As part of my enhancement plan, I created fully working environments for the MongoDB, Python, and Jupyter Notebook. I imported the file containing database data and created the actual database and two collections: for the animal entries and for authentications. In the authentication collection, I created another user, 
+				one with read-only permissions to enable viewing of the database through the dashboard without risking unwanted changes to any data. Either authentication is required to access the database through both the terminal, and Jupyter Notebook. I corrected the Mongo queries within the notebook file, as those were previously incorrect and did not return any results to the data table when a radio button with pre-determined filter criteria was selected. </p>
 
 		</dd>
 
 		<dt>Explanation of enhanced functionality</dt>
 		<dd>	
-			<p>ypsum</p>
+			<p>With modifications and enhancements completed, the project successfully runs. The dashboard has hard-coded authentication that is verified against the database before access is allowed. From there, the data table is loaded with animal data entries that user can further manipulate by either manually sorting and filtering, or by using one of the four radio buttons that were created to filter out very specific types of animals; 
+				the queries check for specific breeds, age ranges, outcome types and more. Those same table results are then also displayed through the chart and map located below. It automatically adjusts to the first row, unless the user selects a different one. </p>
 		</dd>
 
 		<dt>Development process discussion</dt>
 		<dd>
-			<p>ypsum</p>
+			<p>Throughout this enhancement plan and overall work on the project, my greatest and by far most time-consuming issue has been with the environments. As the original files were all created and handled through the school’s virtual environment, I had to start over and build everything from scratch. Due to the sheer number of items needed to get my existing python and notebook files running, it took a considerate amount of time to get every single software and package installed. Once the environment was fully up and running, 
+				I was able to successfully run the files and test functionality on the files, and the database. Creating the database required careful study of MongoDB documentation to ensure I am using the correct commands and logic. I ensured that the MongoDB queries located within the notebook file are accurate by testing them out through the command line directly on the database.</p>
 		</dd>
 	</dl>
 
